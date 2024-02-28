@@ -28,7 +28,7 @@ const BirdDetails = () => {
                   <h2 className="card-title">{bird.BirdMyanmarName}</h2>
                   <h2 className="card-title">{bird.BirdEnglishName}</h2>
                   <p className="card-text">{bird.Description}</p>
-                  <button onClick={() => navigate('/BirdList')} className="btn btn-dark mr-2">Back</button>
+                  <button onClick={() => navigate('/BirdList')} className="btn btn-dark  mx-3">Back</button>
                   <button onClick={handleClick} className="btn btn-danger">Delete</button>
                 </div>
               </div>
