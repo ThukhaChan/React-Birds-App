@@ -3,11 +3,11 @@ import useFetch from "./useFetch";
 
 const BirdDetails = () => {
   const { id } = useParams();
-  const { data: bird, error, isPending } = useFetch('https://bird-json-server-five.vercel.app/birds/' + id);
+  const { data: bird, error, isPending } = useFetch('https://bird-json-server-five.vercel.app/Tbl_Bird/' + id);
   const navigate = useNavigate();
 
   const handleClick = () => {
-    fetch('https://bird-json-server-five.vercel.app/birds/' + id, {
+    fetch('https://bird-json-server-five.vercel.app/Tbl_Bird/' + id, {
       method: 'DELETE'
     }).then(() => {
       navigate('/BirdList');
